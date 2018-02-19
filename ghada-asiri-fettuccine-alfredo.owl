@@ -1,0 +1,372 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/home/ontologies/2018/1/ghada-asiri-fettuccine-alfredo.owl#"
+     xml:base="http://www.semanticweb.org/home/ontologies/2018/1/ghada-asiri-fettuccine-alfredo.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/ghada-asiri-fettuccine-alfredo.owl">
+        <rdfs:comment>Fettuccine Alfredo ontology that describes different variation of the Fettuccine Alfredo original dish</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000001 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000001">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000002"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000003"/>
+        <rdfs:label xml:lang="en">FettuccineAlfredo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000002 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000002">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000003"/>
+        <rdfs:label xml:lang="en">FettuccineSauce</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000003 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000003">
+        <rdfs:label xml:lang="en">FettuccineIngredient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000004 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000004">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000001"/>
+        <rdfs:label xml:lang="en">OriginalFettuccine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000005 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000005">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000001"/>
+        <rdfs:label xml:lang="en">VegetarianFettuccine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000006 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000006">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000001"/>
+        <rdfs:label xml:lang="en">ChickenFettuccine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000007 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000007">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000001"/>
+        <rdfs:label xml:lang="en">ShrimpFettuccine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000008 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000008">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000001"/>
+        <rdfs:label xml:lang="en">LobsterFettuccine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000009 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000009">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000001"/>
+        <rdfs:label xml:lang="en">BaconFettuccine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000010 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000010">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000001"/>
+        <rdfs:label xml:lang="en">GlutenFreeFettuccine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000011 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000011">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000002"/>
+        <rdfs:label xml:lang="en">OriginalSauce</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000012 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000012">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000002"/>
+        <rdfs:label xml:lang="en">WhiteSauce</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000013 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000013">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000002"/>
+        <rdfs:label xml:lang="en">PinkSauce</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000014 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000014">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000002"/>
+        <rdfs:label xml:lang="en">LowFatWhiteSauce</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000015 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000015">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000002"/>
+        <rdfs:label xml:lang="en">LowFatPinkSauce</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000016 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000016">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000003"/>
+        <rdfs:label xml:lang="en">CheeseIngredient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000017 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000017">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000016"/>
+        <rdfs:label xml:lang="en">ParmesanCheeseIngredient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000018 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000018">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000003"/>
+        <rdfs:label xml:lang="en">MeatIngredient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000019 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000019">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000018"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000020"/>
+        <rdfs:label xml:lang="en">ChickenIngredient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000020 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000020">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000018"/>
+        <rdfs:label xml:lang="en">BaconIngredient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000021 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000021">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000003"/>
+        <rdfs:label xml:lang="en">SeafoodIngredient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000022 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000022">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000021"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000023"/>
+        <rdfs:label xml:lang="en">ShrimpIngredient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000023 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000023">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000021"/>
+        <rdfs:label xml:lang="en">LobsterIngredient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000024 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000024">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000003"/>
+        <rdfs:label xml:lang="en">VegetableIngredient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000035 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000035">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000024"/>
+        <rdfs:label xml:lang="en">BellPepperIngredient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000036 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000036">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000035"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000037"/>
+        <rdfs:label xml:lang="en">RedPepperIngredient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000037 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000037">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000035"/>
+        <rdfs:label xml:lang="en">GreenPepperIngredient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000038 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000038">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000024"/>
+        <rdfs:label xml:lang="en">ParsleyIngredient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000039 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000039">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000024"/>
+        <rdfs:label xml:lang="en">DriedTomatoesIngredient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000040 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000040">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000024"/>
+        <rdfs:label xml:lang="en">MushroomIngredient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000041 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000041">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000024"/>
+        <rdfs:label xml:lang="en">OnionIngredient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000042 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000042">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000024"/>
+        <rdfs:label xml:lang="en">GarlicIngredient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000004"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000005"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000006"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000007"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000008"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000009"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000010"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000011"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000012"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000013"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000014"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000015"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000016"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000018"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000021"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000024"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000035"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000038"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000039"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000040"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000041"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000042"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
