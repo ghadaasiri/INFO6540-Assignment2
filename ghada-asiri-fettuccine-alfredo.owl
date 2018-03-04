@@ -33,6 +33,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000064 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000064">
+        <ontologies:FETTUCCINE_0000043>Special words that refer to the class.</ontologies:FETTUCCINE_0000043>
+        <rdfs:label xml:lang="en">Special</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -85,6 +94,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000051">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000048"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000055"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000001"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000002"/>
         <rdfs:label xml:lang="en">hasSauce</rdfs:label>
@@ -169,7 +179,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000061"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <ontologies:FETTUCCINE_0000043>A pasta dish made from fettuccine tossed with Parmesan cheese and butter. Originated in Italy and spread to the world. The recipe has evolved to different variations.</ontologies:FETTUCCINE_0000043>
+        <ontologies:FETTUCCINE_0000043>A pasta dish made from Fettuccine tossed with Parmesan cheese and butter. Originated in Italy and spread to the world. Over the years, the recipe has evolved to different variations.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">FettuccineAlfredo</rdfs:label>
     </owl:Class>
     
@@ -219,7 +229,10 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <ontologies:FETTUCCINE_0000043>Made from fettuccine tossed with Parmesan cheese and butter (Original Sauce).</ontologies:FETTUCCINE_0000043>
+        <ontologies:FETTUCCINE_0000064>Original, Parmigiano-Reggiano, Butter</ontologies:FETTUCCINE_0000064>
         <rdfs:label xml:lang="en">OriginalFettuccine</rdfs:label>
+        <rdfs:seeAlso>http://www.geniuskitchen.com/recipe/alfredos-of-romes-original-fettuccine-alfredo-187391</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -252,7 +265,10 @@
                 <owl:onClass rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <ontologies:FETTUCCINE_0000043>One variation of Fettuccine Alfredo that includes, mashrooms, and different vegetables based on taste.</ontologies:FETTUCCINE_0000043>
+        <ontologies:FETTUCCINE_0000064>Mashroom, Vegetables</ontologies:FETTUCCINE_0000064>
         <rdfs:label xml:lang="en">VegetarianFettuccine</rdfs:label>
+        <rdfs:seeAlso>https://damndelicious.net/2015/04/11/creamy-mushroom-fettuccine/</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -290,7 +306,10 @@
                 <owl:onClass rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <ontologies:FETTUCCINE_0000043>One variation of Fettuccine Alfredo that includes, chicken, and garlic.</ontologies:FETTUCCINE_0000043>
+        <ontologies:FETTUCCINE_0000064>Chicken</ontologies:FETTUCCINE_0000064>
         <rdfs:label xml:lang="en">ChickenFettuccine</rdfs:label>
+        <rdfs:seeAlso>https://www.marthastewart.com/865666/chicken-fettucine-alfredo</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -328,7 +347,10 @@
                 <owl:onClass rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <ontologies:FETTUCCINE_0000043>One variation of Fettuccine Alfredo that includes, shrimp, garlic, and parsley.</ontologies:FETTUCCINE_0000043>
+        <ontologies:FETTUCCINE_0000064>Shrimp</ontologies:FETTUCCINE_0000064>
         <rdfs:label xml:lang="en">ShrimpFettuccine</rdfs:label>
+        <rdfs:seeAlso>https://www.allrecipes.com/recipe/23979/shrimp-fettuccine-alfredo/</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -361,12 +383,21 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000051"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <ontologies:FETTUCCINE_0000043>One variation of Fettuccine Alfredo that includes, lobster, garlic, white wine, and parsley.</ontologies:FETTUCCINE_0000043>
+        <ontologies:FETTUCCINE_0000064>Lobster</ontologies:FETTUCCINE_0000064>
         <rdfs:label xml:lang="en">LobsterFettuccine</rdfs:label>
+        <rdfs:seeAlso>http://www.cbc.ca/bestrecipes/recipes/lobster-fettuccine</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -404,7 +435,10 @@
                 <owl:onClass rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <ontologies:FETTUCCINE_0000043>One variation of Fettuccine Alfredo that includes, bacon, onion, garlic, and parsley.</ontologies:FETTUCCINE_0000043>
+        <ontologies:FETTUCCINE_0000064>Bacon</ontologies:FETTUCCINE_0000064>
         <rdfs:label xml:lang="en">BaconFettuccine</rdfs:label>
+        <rdfs:seeAlso>http://www.geniuskitchen.com/recipe/chicken-alfredo-with-crispy-bacon-paula-deen-471814</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -413,6 +447,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000011">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000059"/>
+        <ontologies:FETTUCCINE_0000043>Parmesan cheese and butter.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">OriginalSauce</rdfs:label>
     </owl:Class>
     
@@ -422,6 +457,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000012">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000059"/>
+        <ontologies:FETTUCCINE_0000043>Unlike the original sauce (Parmesan cheese and butter.), commercialized version of Alfredo sauce may include eggs, starch, cream, and herbs.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">WhiteSauce</rdfs:label>
     </owl:Class>
     
@@ -431,6 +467,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000013">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000059"/>
+        <ontologies:FETTUCCINE_0000043>A blend of marinara sauce (Italian tomato sauce. Usually made with tomatoes, garlic, herbs, and onions.) and alfredo sauce ( mostly, commercialized version that may includes eggs, starch, cream, and herbs.).</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">PinkSauce</rdfs:label>
     </owl:Class>
     
@@ -441,6 +478,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000014">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000057"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000015"/>
+        <ontologies:FETTUCCINE_0000043>Alfredo sauce that is reduced in fat.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">LowFatWhiteSauce</rdfs:label>
     </owl:Class>
     
@@ -450,6 +488,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000015">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000057"/>
+        <ontologies:FETTUCCINE_0000043>A blend of marinara sauce and alfredo sauce that is reduced in fat.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">LowFatPinkSauce</rdfs:label>
     </owl:Class>
     
@@ -459,6 +498,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000016">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000003"/>
+        <ontologies:FETTUCCINE_0000043>Different kinds of cheese that can be added to Fettuccine Alfredo.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">CheeseAddition</rdfs:label>
     </owl:Class>
     
@@ -468,7 +508,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000017">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000016"/>
-        <rdfs:label xml:lang="en">ParmesanCheeseAddition</rdfs:label>
+        <ontologies:FETTUCCINE_0000043>Is a hard, granular cheese, made from unpasteurized cow&apos;s milk, and produced only in Italy. The name &quot;Parmesan&quot; is often used generically for various simulations of this cheese.</ontologies:FETTUCCINE_0000043>
+        <rdfs:label xml:lang="en">ParmigianoReggianoCheese</rdfs:label>
     </owl:Class>
     
 
@@ -477,6 +518,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000018">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000003"/>
+        <ontologies:FETTUCCINE_0000043>Different meat kinds that can be added to Fettuccine Alfredo.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">MeatAddition</rdfs:label>
     </owl:Class>
     
@@ -487,7 +529,8 @@
     <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000019">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000018"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000020"/>
-        <rdfs:label xml:lang="en">ChickenAddition</rdfs:label>
+        <ontologies:FETTUCCINE_0000043>Chicken breast, seasoned with italian dressing, and grilled to perfection.</ontologies:FETTUCCINE_0000043>
+        <rdfs:label xml:lang="en">ChickenBreastAddition</rdfs:label>
     </owl:Class>
     
 
@@ -496,6 +539,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000020">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000018"/>
+        <ontologies:FETTUCCINE_0000043>Bacon is a type of salt-cured pork. It is prepared from several different cuts of meat, typically from the pork belly or from back cuts, which have less fat than the belly.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">BaconAddition</rdfs:label>
     </owl:Class>
     
@@ -505,6 +549,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000021">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000003"/>
+        <ontologies:FETTUCCINE_0000043>Different seafood that can be added to Fettuccine Alfredo.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">SeafoodAddition</rdfs:label>
     </owl:Class>
     
@@ -515,6 +560,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000022">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000021"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000023"/>
+        <ontologies:FETTUCCINE_0000043>Seasoned stir fry shrimp.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">ShrimpAddition</rdfs:label>
     </owl:Class>
     
@@ -524,6 +570,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000023">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000021"/>
+        <ontologies:FETTUCCINE_0000043>Grilled lobster with lemon and herbs.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">LobsterAddition</rdfs:label>
     </owl:Class>
     
@@ -533,6 +580,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000024">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000003"/>
+        <ontologies:FETTUCCINE_0000043>Different vegetables that can be added to Fettuccine Alfredo.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">VegetableAddition</rdfs:label>
     </owl:Class>
     
@@ -542,6 +590,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000035">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000024"/>
+        <ontologies:FETTUCCINE_0000043>Different kinds of bell pepper. Also known as sweet pepper or pepper.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">BellPepperAddition</rdfs:label>
     </owl:Class>
     
@@ -552,6 +601,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000036">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000035"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000037"/>
+        <ontologies:FETTUCCINE_0000043>A fresh, crisp red bell pepper.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">RedPepperAddition</rdfs:label>
     </owl:Class>
     
@@ -561,6 +611,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000037">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000035"/>
+        <ontologies:FETTUCCINE_0000043>A fresh, crisp green bell pepper.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">GreenPepperAddition</rdfs:label>
     </owl:Class>
     
@@ -570,6 +621,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000038">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000024"/>
+        <ontologies:FETTUCCINE_0000043>Freshly chopped parsley.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">ParsleyAddition</rdfs:label>
     </owl:Class>
     
@@ -579,7 +631,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000039">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000024"/>
-        <rdfs:label xml:lang="en">DriedTomatoesAddition</rdfs:label>
+        <ontologies:FETTUCCINE_0000043>Ripe tomatoes that lose most of their water content after spending a majority of their drying time in the sun.</ontologies:FETTUCCINE_0000043>
+        <rdfs:label xml:lang="en">SunDriedTomatoesAddition</rdfs:label>
     </owl:Class>
     
 
@@ -588,6 +641,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000040">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000024"/>
+        <ontologies:FETTUCCINE_0000043>Creminis, also sold as baby portobellos, are just a more mature white button mushroom. They are a mild mushroom in flavor, and make a great substitute for white buttons in your favorite recipes as they add a deeper flavor.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">MushroomAddition</rdfs:label>
     </owl:Class>
     
@@ -597,6 +651,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000041">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000024"/>
+        <ontologies:FETTUCCINE_0000043>Freshly sliced sweet onion.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">OnionAddition</rdfs:label>
     </owl:Class>
     
@@ -622,6 +677,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000046">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000045"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000047"/>
+        <ontologies:FETTUCCINE_0000043>&quot;little ribbons&quot; in Italian. Flat thick pasta made of egg and flour (usually one egg for every 100 g of flour).</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">RegularPasta</rdfs:label>
     </owl:Class>
     
@@ -631,6 +687,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000047">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000045"/>
+        <ontologies:FETTUCCINE_0000043>A Fettuccine noodle that is free of gluten, Which is a mixture of proteins found in wheat and related grains. Suitable for people who are sensitive to it.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">GlutenFreePasta</rdfs:label>
     </owl:Class>
     
@@ -676,6 +733,8 @@
                 </owl:onClass>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <ontologies:FETTUCCINE_0000043>One variation of Fettuccine Alfredo that includes low fat sauce instead of the regular sauces, and it can include any of the variations (e.g. chicken, bacon, vegetarian ... ).</ontologies:FETTUCCINE_0000043>
+        <ontologies:FETTUCCINE_0000064>Low Fat</ontologies:FETTUCCINE_0000064>
         <rdfs:label xml:lang="en">LowFatFettuccine</rdfs:label>
     </owl:Class>
     
@@ -686,6 +745,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000057">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000002"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000059"/>
+        <ontologies:FETTUCCINE_0000043>Fettuccine sauce that is reduced in fat.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">LowFatSauce</rdfs:label>
     </owl:Class>
     
@@ -695,6 +755,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000059">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000002"/>
+        <ontologies:FETTUCCINE_0000043>Different types of common used sauces in fettuccine alfredo.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">RegularSauce</rdfs:label>
     </owl:Class>
     
@@ -710,7 +771,38 @@
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
+        <ontologies:FETTUCCINE_0000043>Origin country for Fettuccine.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">Country</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000063 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000063">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000024"/>
+        <ontologies:FETTUCCINE_0000043>Freshly chopped garlic.</ontologies:FETTUCCINE_0000043>
+        <rdfs:label xml:lang="en">GarlicAddition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000065 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000065">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000003"/>
+        <ontologies:FETTUCCINE_0000043>Wines that can be added to Fettuccine Alfredo.</ontologies:FETTUCCINE_0000043>
+        <rdfs:label xml:lang="en">WineAddition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000066 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000066">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000065"/>
+        <ontologies:FETTUCCINE_0000043>Is mainly produced from &quot;white&quot; grapes, which are green or yellow in colour, such as the Chardonnay, Sauvignon, and Riesling. It can be used in preparing Fettuccine Alfredo.</ontologies:FETTUCCINE_0000043>
+        <rdfs:label xml:lang="en">WhiteWineAddition</rdfs:label>
     </owl:Class>
     
 
@@ -757,6 +849,18 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000004"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000005"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000006"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000007"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000008"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000009"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000056"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000011"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000012"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000013"/>
@@ -769,6 +873,18 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000018"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000021"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000024"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000065"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000035"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000038"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000039"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000040"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000041"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000063"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
