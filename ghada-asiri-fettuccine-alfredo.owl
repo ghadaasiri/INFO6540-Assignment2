@@ -59,6 +59,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000052"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <ontologies:FETTUCCINE_0000043>A component that is a part of a class.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">hasIngredient</rdfs:label>
     </owl:ObjectProperty>
     
@@ -72,6 +73,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000001"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000045"/>
+        <ontologies:FETTUCCINE_0000043>The pasta type that a class has.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">hasPasta</rdfs:label>
     </owl:ObjectProperty>
     
@@ -84,6 +86,7 @@
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000053"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000001"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000003"/>
+        <ontologies:FETTUCCINE_0000043>An additional component that can be added to a class.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">hasAddition</rdfs:label>
     </owl:ObjectProperty>
     
@@ -97,6 +100,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000001"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000002"/>
+        <ontologies:FETTUCCINE_0000043>The sauce type that a class has.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">hasSauce</rdfs:label>
     </owl:ObjectProperty>
     
@@ -107,6 +111,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000052">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <ontologies:FETTUCCINE_0000043>The component of a particular class (inverse of hasIngredient).</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">isIngredientOf</rdfs:label>
     </owl:ObjectProperty>
     
@@ -118,6 +123,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000052"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000003"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000001"/>
+        <ontologies:FETTUCCINE_0000043>An additional component of a particular class (inverse of hasAddition).</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">isAdditionOf</rdfs:label>
     </owl:ObjectProperty>
     
@@ -129,6 +135,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000052"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000045"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000001"/>
+        <ontologies:FETTUCCINE_0000043>A paste type of a particular class (inverse of hasPasta).</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">isPastaOf</rdfs:label>
     </owl:ObjectProperty>
     
@@ -140,6 +147,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000052"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000002"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000001"/>
+        <ontologies:FETTUCCINE_0000043>A sauce type of a particular class (inverse of hasSauce).</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">isSauceOf</rdfs:label>
     </owl:ObjectProperty>
     
@@ -148,6 +156,7 @@
     <!-- http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000058 -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000058">
+        <ontologies:FETTUCCINE_0000043>The country in which a class has relation to.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">hasCountryOfOrigin</rdfs:label>
     </owl:ObjectProperty>
     
@@ -823,6 +832,7 @@
     <owl:Thing rdf:about="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000061">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/home/ontologies/2018/1/FETTUCCINE_0000060"/>
+        <ontologies:FETTUCCINE_0000043>A European country with a long Mediterranean coastline, has left a powerful mark on Western culture and cuisine.</ontologies:FETTUCCINE_0000043>
         <rdfs:label xml:lang="en">Italy</rdfs:label>
     </owl:Thing>
     
